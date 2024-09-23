@@ -1,0 +1,71 @@
+body {
+    margin: 0;
+
+}
+
+.top-container {
+    background-image: url("https://media.istockphoto.com/id/1482818643/photo/a-computer-keyboard-is-an-input-device-that-allows-a-person-to-enter-letters-numbers-and.jpg?s=1024x1024&w=is&k=20&c=HT4uXoOP87mRNCgCM9Cdjufpf1Rdl60EG9poySVClWU=");
+    height: 100vh;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+.top-container h1 {
+    color: white;
+    font-size: 50px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 2px;
+
+}
+
+.text {
+    margin: 50px 5%;
+    font-family: sans-serif;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* فكسد عشان الناف بار يكون ع الصوره */
+    position: fixed;
+    background-color: white;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, .3);
+    transition: background-color 0.4s;
+
+}
+
+.navbar a img {
+    padding: 0 50px;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    padding: 0 150px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    margin: 0 10px;
+    color: black;
+    font-family: cursive;
+
+}
+
+.navbar ul li a:hover {
+    color: red;
+}
+
+.navbar.active {
+    background-color: black;
+}
+
+.navbar.active ul li a {
+    color: white;
+}
